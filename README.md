@@ -7,7 +7,7 @@ Style librement adapté du style des Presses Universitaires de Rennes (PUR) et d
 ## 1/ Campus : citation en note de bas de page
 ### Citation & bibliographie
 ARTICLE: 
-> BOURDIEU Pierre, « Le champ littéraire », Actes de la Recherche en Sciences Sociales, vol. 89, n°1, 1991.
+> BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, vol. 89, n°1, 1991.
 
 LIVRE (avec page spécifiée)  :
 > CITTON Yves, _Pour une écologie de l’attention_, Seuil, 2014, p. 12.
