@@ -6,14 +6,14 @@ Style librement adapté du style des Presses Universitaires de Rennes (PUR) et d
 
 ## 1/ Campus : citation en note de bas de page
 ### Citation & bibliographie
-ARTICLE: 
+* Article : 
 > BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, vol. 89, n°1, 1991.
 
-LIVRE (avec page spécifiée)  :
+* Livre (avec page spécifiée)  :
 > CITTON Yves, _Pour une écologie de l’attention_, Seuil, 2014, p. 12.
 
-CHAPITRE DE LIVRE : 
-> SEYFERT Robert et ROBERGE Jonathan, « What are algorithmic cultures? » dans SEYFERT Robert, ROBERGE Jonathan, _Algorithmic Cultures: Essays on Meaning, Performance and New Technologies_, Taylor & Francis, 2016.
+* Chapitre de livre : 
+  > SEYFERT Robert et ROBERGE Jonathan, « What are algorithmic cultures? » dans SEYFERT Robert, ROBERGE Jonathan, _Algorithmic Cultures: Essays on Meaning, Performance and New Technologies_, Taylor & Francis, 2016.
 
 _NB : les noms des auteurs sont écrits en petites majuscules._
 
@@ -22,23 +22,23 @@ _NB : les noms des auteurs sont écrits en petites majuscules._
 ### A. Citation
 
 * Article : 
-> (Bourdieu, 1991)
+  > (Bourdieu, 1991)
 
 * Livre (avec page spécifiée)  :
-> (Citton, 2014, p. 12)
+  > (Citton, 2014, p. 12)
 
 * Chapitre de livre : 
-> (Seyfert & Roberge, 2016)
+  > (Seyfert & Roberge, 2016)
 
 
 ### B. Bibliographie
-ARTICLE : 
-> BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, 89(1), 1991.
+* Article : 
+  > BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, 89(1), 1991.
 
-LIVRE :
-> CITTON, Yves (2014), _Pour une écologie de l’attention_, Seuil.
+* Livre :
+  > CITTON, Yves (2014), _Pour une écologie de l’attention_, Seuil.
 
-CHAPITRE DE LIVRE :
-> SEYFERT, Robert & ROBERGE, Jonathan (2016), « What are algorithmic cultures? », dans Robert Seyfert & Jonathan Roberge, _Algorithmic Cultures:          Essays on Meaning, Performance and New Technologies_, Taylor & Francis, p. 1‑25.
+* Chapitre de livre : 
+  > SEYFERT, Robert & ROBERGE, Jonathan (2016), « What are algorithmic cultures? », dans Robert Seyfert & Jonathan Roberge, _Algorithmic Cultures:          Essays on Meaning, Performance and New Technologies_, Taylor & Francis, p. 1‑25.
 
 
