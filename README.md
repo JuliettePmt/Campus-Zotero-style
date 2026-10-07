@@ -20,13 +20,14 @@ _NB : les noms des auteurs sont écrits en petites majuscules._
 
 ## 2/ Campus (in-text) : citation dans le texte
 ### A. Citation
-ARTICLE : 
+
+* Article : 
 > (Bourdieu, 1991)
 
-LIVRE :
+* Livre (avec page spécifiée)  :
 > (Citton, 2014, p. 12)
 
-CHAPITRE DE LIVRE : 
+* Chapitre de livre : 
 > (Seyfert & Roberge, 2016)
 
 
