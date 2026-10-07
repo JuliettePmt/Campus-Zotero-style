@@ -3,6 +3,7 @@
 Un style Zotero en français. Disponible en 2 formats : dans le texte, et note de bas de page.
 
 Librement adapté du style des Presses Universitaires de Rennes (PUR).
+
 _NB : les noms des auteurs sont écrits en petites majuscules_
 
 ## 1/ Campus citation en note de bas de page
@@ -22,6 +23,21 @@ CHAPITRE DE LIVRE :
 ARTICLE : 
 > (Bourdieu, 1991)
 
+LIVRE :
+> (Citton, 2014, p. 12)
+
+CHAPITRE DE LIVRE : 
+> (Seyfert & Roberge, 2016)
+
+
 ### B. Bibliographie
 ARTICLE : 
 > BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, 89(1), 1991.
+
+LIVRE :
+> CITTON, Yves (2014), Pour une écologie de l’attention, Seuil.
+
+CHAPITRE DE LIVRE :
+> SEYFERT, Robert & ROBERGE, Jonathan (2016), « What are algorithmic cultures? », dans Robert Seyfert & Jonathan Roberge, _Algorithmic Cultures:          Essays on Meaning, Performance and New Technologies_, Taylor & Francis, p. 1‑25.
+
+
