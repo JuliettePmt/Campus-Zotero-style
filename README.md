@@ -5,7 +5,7 @@ Un style Zotero en français. Disponible en 2 formats : dans le texte, et note d
 Style librement adapté du style des Presses Universitaires de Rennes (PUR) et d'APA.
 
 ## 1/ Campus : citation en note de bas de page
-### Citation & bibliographie
+### A. Citation & bibliographie
 * Article : 
     > BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, vol. 89, n°1, 1991.
 
