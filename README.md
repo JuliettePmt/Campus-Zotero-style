@@ -6,7 +6,7 @@ Style librement adapté du style des Presses Universitaires de Rennes (PUR) et d
 
 _NB : les noms des auteurs sont écrits en petites majuscules._
 
-## 1/ Campus citation en note de bas de page
+## 1/ Campus : citation en note de bas de page
 ### Citation & bibliographie
 ARTICLE: 
 > BOURDIEU Pierre, « Le champ littéraire », Actes de la Recherche en Sciences Sociales, vol. 89, n°1, 1991.
