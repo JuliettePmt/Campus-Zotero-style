@@ -4,8 +4,6 @@ Un style Zotero en français. Disponible en 2 formats : dans le texte, et note d
 
 Style librement adapté du style des Presses Universitaires de Rennes (PUR) et d'APA.
 
-_NB : les noms des auteurs sont écrits en petites majuscules._
-
 ## 1/ Campus : citation en note de bas de page
 ### Citation & bibliographie
 ARTICLE: 
@@ -16,6 +14,8 @@ LIVRE (avec page spécifiée)  :
 
 CHAPITRE DE LIVRE : 
 > SEYFERT Robert et ROBERGE Jonathan, « What are algorithmic cultures? » dans SEYFERT Robert, ROBERGE Jonathan, _Algorithmic Cultures: Essays on Meaning, Performance and New Technologies_, Taylor & Francis, 2016.
+
+_NB : les noms des auteurs sont écrits en petites majuscules._
 
 
 ## 2/ Campus (in-text) : citation dans le texte
@@ -35,7 +35,7 @@ ARTICLE :
 > BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, 89(1), 1991.
 
 LIVRE :
-> CITTON, Yves (2014), Pour une écologie de l’attention, Seuil.
+> CITTON, Yves (2014), _Pour une écologie de l’attention_, Seuil.
 
 CHAPITRE DE LIVRE :
 > SEYFERT, Robert & ROBERGE, Jonathan (2016), « What are algorithmic cultures? », dans Robert Seyfert & Jonathan Roberge, _Algorithmic Cultures:          Essays on Meaning, Performance and New Technologies_, Taylor & Francis, p. 1‑25.
