@@ -2,15 +2,15 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" page-range-format="expanded">
   <info>
 <title>Campus (in-text)</title>
-<id>http://www.zotero.org/styles/in-text-campus</id>
+<id>http://www.zotero.org/styles/in-text-Campus</id>
     <link href="http://www.zotero.org/styles/in-text-Campus" rel="self"/>
     <author>
-      <name>Campus (in-text)</name>
+      <name>Juliette</name>
     </author>
     <category citation-format="author-date"/>
-    <category field="sociology"/>
+    <category field="social_science"/>
     <category field="generic-base"/>
-    <updated>2025-01-22T18:45:37+00:00</updated>
+    <updated>2026-10-07T18:45:37+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -93,6 +93,46 @@
       <term name="et-al">et al.</term>
     </terms>
   </locale>
+  <!-- For Indigeneous Knowledge, assume the item is stored as `document` or `speech`
+       and that Nation/Community, treaty, where the Elder lives, 
+       and topic are all stored in `title`
+       cf. https://libguides.norquest.ca/c.php?g=314831&p=5188823.
+       If the item is stored as `interview`, assume that Nation/Community, treat, and topic
+       are stored in `title`, 'Oral teaching' or similar is stored in `archive`, and where
+       the Elder lives is stored in `archive-place`. 
+  -->
+  <!-- Reviews are detected if an item has type `review` or `review-book` or if it has any of the variables
+       `reviewed-title`, `reviewed-author`, or `reviewed-genre`. For the latter case, reviews are commonly 
+       stored as types `article-journal`, `article-magazine`, `article-newspaper`, `post-weblog`, or `webpage` 
+  -->
+  <!-- General categories of item types:
+       Periodical: article-journal article-magazine article-newspaper periodical post-weblog review review-book
+       Periodical or Booklike: paper-conference
+       Booklike: article book broadcast chapter classic collection dataset document
+                 entry entry-dictionary entry-encyclopedia event figure
+                 graphic interview manuscript map motion_picture musical_score
+                 pamphlet patent performance personal_communication post report
+                 software song speech standard thesis webpage
+       Legal: bill hearing legal_case legislation regulation treaty
+  -->
+  <!-- Equivalencies:
+       classic == book
+       document == report, but give full date
+       standard == report
+       performance == speech
+       event == speech
+       collection == book, but give full date
+  -->
+  <!-- Role equivalencies:
+       compiler == editor
+       organizer, curator == chair
+       script-writer == director
+       producer == director (but don't print both)
+       guest, host == director
+       series-creator, executive-producer == editor
+  -->
+  <!-- APA references contain four parts: author, date, title, source -->
+
 
 
   <macro name="author-bib">
@@ -1519,7 +1559,7 @@
         <choose>
           <if variable="volume">
             <group>
-              <text variable="volume" font-style="italic"/>
+              <text variable="volume"/>
               <text variable="issue" prefix="(" suffix=")"/>
             </group>
           </if>
