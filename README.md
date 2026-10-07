@@ -2,9 +2,9 @@
 
 Un style Zotero en français. Disponible en 2 formats : dans le texte, et note de bas de page.
 
-Librement adapté du style des Presses Universitaires de Rennes (PUR).
+Style librement adapté du style des Presses Universitaires de Rennes (PUR) et d'APA.
 
-_NB : les noms des auteurs sont écrits en petites majuscules_
+_NB : les noms des auteurs sont écrits en petites majuscules._
 
 ## 1/ Campus citation en note de bas de page
 ### Citation & bibliographie
