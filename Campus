@@ -128,19 +128,36 @@
     </name>
   </names>
 </macro>
-
 <macro name="ibid">
   <choose>
-    <if position="ibid">
-      <text value="Ibid." font-style="italic"/>
-    </if>
-    <else-if position="ibid-with-locator">
+    <if position="ibid-with-locator">
       <group delimiter=", ">
         <text value="Ibid." font-style="italic"/>
-        <text variable="locator" font-style="italic"/>
+        <text macro="citation-locator"/>
       </group>
+    </if>
+    <else-if position="ibid">
+      <text value="Ibid." font-style="italic"/>
     </else-if>
   </choose>
+</macro>
+
+<macro name="op-cit">
+  <group delimiter=", ">
+    <names variable="author">
+      <name name-as-sort-order="all" sort-separator=" " and="text" delimiter-precedes-last="never">
+        <name-part name="family" font-variant="small-caps"/>
+        <name-part name="given"/>
+      </name>
+    </names>
+    <choose>
+      <if disambiguate="true">
+        <text variable="title" font-style="italic"/>
+      </if>
+    </choose>
+    <text value="op. cit." font-style="italic"/>
+    <text macro="citation-locator"/>
+  </group>
 </macro>
 
 <macro name="blog-data">
@@ -148,31 +165,6 @@
       <if type="webpage webpage post post-weblog" match="any">
          <text variable="container-title"  font-style="italic"/>
      </if>
-  </choose>
-</macro>
-
-<macro name="op-cit">
-  <choose>
-    <!-- Pour les citations répétées du même livre -->
-    <if position="subsequent">
-      <!-- Ajoute le titre seulement si nécessaire pour différencier les ouvrages -->
-      <group delimiter=", ">
-        <names variable="author">
-          <name name-as-sort-order="all" sort-separator=" "  and="text" delimiter-precedes-last="never">
-            <name-part name="family" font-variant="small-caps"/>
-            <name-part name="given"/>
-          </name>
-        </names>
-        <!-- Titre uniquement si nécessaire pour désambiguïser -->
-        <choose>
-          <if disambiguate="true">
-            <text variable="title" font-style="italic"/>
-          </if>
-        </choose>
-        <text value="op. cit." font-style="italic"/>
-        <text variable="locator" prefix=" p. "/>
-      </group>
-    </if>
   </choose>
 </macro>
 
@@ -457,21 +449,18 @@
 <citation et-al-min="3" et-al-use-first="2" disambiguate-add-names="true" disambiguate-add-givenname="true">
   <layout suffix=".">
   <choose>
-    <!-- Ibid pour les citations consécutives -->
-    <if position="ibid-with-locator">
-      <group delimiter=", ">
-        <text term="ibid" font-style="italic"/>
-        <text macro="point-locators-subsequent"/>
-        <text variable="locator" prefix="p. "/>
-      </group>
+    <if position="ibid-with-locator ibid" match="any">
+      <text macro="ibid"/>
     </if>
-    <else-if position="ibid">
-      <text term="ibid" font-style="italic"/>
-      <text variable="locator" prefix=", p. "/>
-    </else-if>
-    <!-- Op. cit. pour les citations non consécutives -->
     <else-if position="subsequent">
-    <text macro="op-cit"/>
+      <choose>
+        <if variable="locator" match="none">
+          <text value="Ibid." font-style="italic"/>
+        </if>
+        <else>
+          <text macro="op-cit"/>
+        </else>
+      </choose>
     </else-if>
     <else-if type="paper-conference" match="any">
       <group delimiter=", ">
@@ -559,16 +548,6 @@
     <text macro="publication-history"/>
     <text macro="url"/>
     </else>
-      <else-if type="software">
-        <group>
-          <date variable="issued" form="text" prefix=", ">
-            <date-part name="year"/>
-          </date>
-        </group>
-        <group prefix=". Code du logiciel disponible à l'adresse : ">
-          <text macro="URL-software"/>
-        </group>
-      </else-if>
   </choose>
   </layout>
 </citation>
@@ -598,7 +577,16 @@
           <text variable="locator" prefix="p. "/>
         </group>
       </if>
-
+      <else-if type="software">
+        <group>
+          <date variable="issued" form="text" prefix=", ">
+            <date-part name="year"/>
+          </date>
+        </group>
+        <group prefix=". Code du logiciel disponible à l'adresse : ">
+          <text macro="URL-software"/>
+        </group>
+      </else-if>
       <!-- Cas tous les autres types -->
       <else>
         <group delimiter=", ">
