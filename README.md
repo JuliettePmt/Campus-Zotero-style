@@ -15,13 +15,16 @@ Un style Zotero universitaire en français, disponible en 2 formats : citation d
 ## 1/ Campus : citation en note de bas de page
 ### A. Citation & bibliographie
 Article : 
-    > BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, vol. 89, n°1, 1991.
+
+> BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, vol. 89, n°1, 1991.
 
 Livre (avec page spécifiée)  :
-    > CITTON Yves, _Pour une écologie de l’attention_, Seuil, 2014, p. 12.
+
+> CITTON Yves, _Pour une écologie de l’attention_, Seuil, 2014, p. 12.
 
 Chapitre de livre : 
-    > SEYFERT Robert et ROBERGE Jonathan, « What are algorithmic cultures? » dans SEYFERT Robert, ROBERGE Jonathan, _Algorithmic Cultures: Essays on Meaning, Performance and New Technologies_, Taylor & Francis, 2016.
+
+> SEYFERT Robert et ROBERGE Jonathan, « What are algorithmic cultures? » dans SEYFERT Robert, ROBERGE Jonathan, _Algorithmic Cultures: Essays on Meaning, Performance and New Technologies_, Taylor & Francis, 2016.
 
 <br>
 
