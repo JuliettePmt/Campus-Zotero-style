@@ -11,7 +11,7 @@ Un style Zotero universitaire en français, disponible en 2 formats : citation d
 
 <br>
 <br>
-
+ 
 ## 1/ Campus : citation en note de bas de page
 ### A. Citation & bibliographie
 Article : 
