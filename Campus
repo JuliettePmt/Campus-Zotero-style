@@ -471,7 +471,7 @@
     <!-- Ibid pour les citations consécutives -->
     <if position="ibid-with-locator">
       <group delimiter=", ">
-        <text term="ibid"/>
+        <text term="ibid" font-style="italic"/>
         <text macro="point-locators-subsequent"/>
       </group>
     </if>
