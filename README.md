@@ -6,7 +6,7 @@ Un style Zotero universitaire en français, disponible en 2 formats : citation d
 <br>
 
 ### Précision :
-* Le style prend automatique en charge _ibid._ et _op. cit._
+* Le style prend automatiquement en charge _ibid._ et _op. cit._
 
 
 <br>
