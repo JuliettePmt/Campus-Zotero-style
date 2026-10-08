@@ -49,6 +49,7 @@ Chapitre de livre :
 
 > (Seyfert & Roberge, 2016)
 
+<br>
 
 ### 2.2. Bibliographie
 Article : 
