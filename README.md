@@ -6,9 +6,9 @@ Un style Zotero universitaire en français, disponible en 2 formats : citation d
 ### Précisions :
 * Le style rend en charge automatique _ibid._ et _op. cit._
 
-\
-\
 
+<br>
+<br>
 
 ## 1/ Campus : citation en note de bas de page
 ### A. Citation & bibliographie
