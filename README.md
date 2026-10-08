@@ -5,7 +5,7 @@ Un style Zotero universitaire en français, disponible en 2 formats : citation d
 
 <br>
 
-### Précisions :
+### Précision :
 * Le style rend en charge automatique _ibid._ et _op. cit._
 
 
@@ -23,7 +23,9 @@ Livre (avec page spécifiée)  :
 Chapitre de livre : 
     > SEYFERT Robert et ROBERGE Jonathan, « What are algorithmic cultures? » dans SEYFERT Robert, ROBERGE Jonathan, _Algorithmic Cultures: Essays on Meaning, Performance and New Technologies_, Taylor & Francis, 2016.
 
-### Précisions :
+<br>
+
+### Précision :
 * Les noms des auteurs sont écrits en petites majuscules._
 
 <br>
