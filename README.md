@@ -3,6 +3,8 @@
 Un style Zotero universitaire en français, disponible en 2 formats : citation dans le texte, et note de bas de page.
 
 
+<br>
+
 ### Précisions :
 * Le style rend en charge automatique _ibid._ et _op. cit._
 
@@ -24,7 +26,8 @@ Chapitre de livre :
 ### Précisions :
 * Les noms des auteurs sont écrits en petites majuscules._
 
-
+<br>
+<br>
 ## 2/ Campus (in-text) : citation dans le texte
 ### A. Citation
 
@@ -48,7 +51,8 @@ Chapitre de livre :
 * Chapitre de livre : 
   > SEYFERT, Robert & ROBERGE, Jonathan (2016), « What are algorithmic cultures? », dans Robert Seyfert & Jonathan Roberge, _Algorithmic Cultures:          Essays on Meaning, Performance and New Technologies_, Taylor & Francis, p. 1‑25.
 
-
+<br>
+<br>
 ## Crédits
 Le style librement adapté du style des Presses Universitaires de Rennes (PUR) et d'APA.
 
