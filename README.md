@@ -51,14 +51,17 @@ Chapitre de livre :
 
 
 ### 2.2. Bibliographie
-* Article : 
-    > BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, 89(1), 1991.
+Article : 
 
-* Livre :
-    > CITTON, Yves (2014), _Pour une écologie de l’attention_, Seuil.
+> BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, 89(1), 1991.
 
-* Chapitre de livre : 
-  > SEYFERT, Robert & ROBERGE, Jonathan (2016), « What are algorithmic cultures? », dans Robert Seyfert & Jonathan Roberge, _Algorithmic Cultures:          Essays on Meaning, Performance and New Technologies_, Taylor & Francis, p. 1‑25.
+Livre :
+
+> CITTON, Yves (2014), _Pour une écologie de l’attention_, Seuil.
+
+Chapitre de livre : 
+
+> SEYFERT, Robert & ROBERGE, Jonathan (2016), « What are algorithmic cultures? », dans Robert Seyfert & Jonathan Roberge, _Algorithmic Cultures:          Essays on Meaning, Performance and New Technologies_, Taylor & Francis, p. 1‑25.
 
 <br>
 <br>
