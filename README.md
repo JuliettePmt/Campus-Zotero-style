@@ -68,5 +68,5 @@ Chapitre de livre :
 <br>
 
 ## Crédits
-Le style librement adapté du style des Presses Universitaires de Rennes (PUR) et d'APA.
+Le style est librement adapté du style de celui des Presses Universitaires de Rennes et d'APA.
 
