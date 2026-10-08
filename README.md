@@ -26,7 +26,7 @@ Chapitre de livre :
 <br>
 
 ### Précision :
-* Les noms des auteurs sont écrits en petites majuscules._
+* Les noms des auteurs sont écrits en petites majuscules.
 
 <br>
 <br>
@@ -56,6 +56,7 @@ Chapitre de livre :
 
 <br>
 <br>
+
 ## Crédits
 Le style librement adapté du style des Presses Universitaires de Rennes (PUR) et d'APA.
 
