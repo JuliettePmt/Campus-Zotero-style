@@ -81,17 +81,16 @@
 </macro>
 
 <macro name="author">
-    <choose>
-      <if variable="author">
-        <names variable="author">
-       <name font-style="normal" and="text" delimiter-precedes-last="never" initialize="false" initialize-with=". " name-as-sort-order="all" sort-separator=" " delimiter-precedes-et-al="always" et-al-min="4" et-al-use-first="3" et-al-subsequent-min="3" et-al-subsequent-use-first="2">
-            <name-part name="family" font-variant="small-caps"/>
-          </name>
-          <et-al font-style="italic"/>
-        </names>
-      </if>
-    </choose>
-  </macro>
+  <names variable="author">
+    <name font-style="normal" and="text" delimiter-precedes-last="never" initialize="false" initialize-with=". " name-as-sort-order="all" sort-separator=" " delimiter-precedes-et-al="always" et-al-min="4" et-al-use-first="3" et-al-subsequent-min="3" et-al-subsequent-use-first="2">
+      <name-part name="family" font-variant="small-caps"/>
+    </name>
+    <et-al font-style="italic"/>
+    <substitute>
+      <names variable="editor"/>
+    </substitute>
+  </names>
+</macro>
   
 <macro name="container-author">
     <names variable="container-author">
