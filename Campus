@@ -466,6 +466,7 @@
     </if>
     <else-if position="ibid">
       <text term="ibid" font-style="italic"/>
+      <text variable="locator" prefix=", p. "/>
     </else-if>
     <!-- Op. cit. pour les citations non consécutives -->
     <else-if position="subsequent">
