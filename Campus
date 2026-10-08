@@ -173,7 +173,7 @@
           </if>
         </choose>
         <text value="op. cit." font-style="italic"/>
-        <text variable="locator" prefix=", p. "/>
+        <text variable="locator" prefix=" p. "/>
       </group>
     </if>
   </choose>
