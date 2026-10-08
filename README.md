@@ -13,7 +13,7 @@ Un style Zotero universitaire en français, disponible en 2 formats : citation d
 <br>
  
 ## 1/ Campus : citation en note de bas de page
-### A. Citation & bibliographie
+### 1.1. Citation & bibliographie
 Article : 
 
 > BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, vol. 89, n°1, 1991.
@@ -35,19 +35,22 @@ Chapitre de livre :
 <br>
 
 ## 2/ Campus (in-text) : citation dans le texte
-### A. Citation
+### 2.1. Citation
 
 Article : 
-    > (Bourdieu, 1991)
+
+> (Bourdieu, 1991)
 
 Livre (avec page spécifiée)  :
-    > (Citton, 2014, p. 12)
+
+> (Citton, 2014, p. 12)
 
 Chapitre de livre : 
-    > (Seyfert & Roberge, 2016)
+
+> (Seyfert & Roberge, 2016)
 
 
-### B. Bibliographie
+### 2.2. Bibliographie
 * Article : 
     > BOURDIEU Pierre, « Le champ littéraire », _Actes de la Recherche en Sciences Sociales_, 89(1), 1991.
 
