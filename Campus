@@ -541,6 +541,17 @@
         <date-part name="year"/>
         </date>
       </else-if>
+      <else-if type="speech" match="any">
+        <group delimiter=", ">
+          <text variable="event" font-style="italic"/>
+          <text variable="event-place"/>
+          <date variable="issued" form="text">
+          <date-part name="day"/>
+          <date-part name="month"/>
+          <date-part name="year"/>
+          </date>
+        </group>
+      </else-if>
     </choose>
     </group>
     </group>
