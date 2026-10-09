@@ -151,7 +151,14 @@
     </names>
     <choose>
       <if disambiguate="true">
-        <text variable="title" font-style="italic"/>
+        <choose>
+          <if type="book">
+            <text variable="title" font-style="italic"/>
+          </if>
+          <else>
+            <text variable="title" quotes="true"/>
+          </else>
+        </choose>
       </if>
     </choose>
     <text value="op. cit." font-style="italic"/>
