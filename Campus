@@ -470,7 +470,6 @@
         <text macro="conference"/>
         <text variable="issue" prefix="n°"/>
         <date variable="issued" form="text">
-          <date-part name="day"/>
           <date-part name="month"/>
           <date-part name="year"/>
         </date>
@@ -500,7 +499,6 @@
         <text macro="conference"/>
         <text variable="issue" prefix="n°"/>
         <date variable="issued" form="text">
-          <date-part name="day"/>
           <date-part name="month"/>
           <date-part name="year"/>
         </date>
@@ -515,11 +513,7 @@
       <group delimiter=", ">
         <text variable="volume" prefix="vol. "/>
         <text variable="issue" prefix="n°"/>
-        <date variable="issued" form="text">
-          <date-part name="day"/>
-          <date-part name="month"/>
-          <date-part name="year"/>
-        </date>
+        <date date-parts="year" form="text" variable="issued"/>
         <text variable="locator" prefix="p. "/>
       </group>
     </else-if>
@@ -527,7 +521,6 @@
       <group delimiter=", ">
         <text variable="issue" prefix="n°"/>
         <date variable="issued" form="text">
-          <date-part name="day"/>
           <date-part name="month"/>
           <date-part name="year"/>
         </date>
@@ -536,7 +529,6 @@
     </else-if>
       <else-if type="webpage webpage post post-weblog" match="any">
         <date variable="issued" form="text">
-        <date-part name="day"/>
         <date-part name="month"/>
         <date-part name="year"/>
         </date>
@@ -639,11 +631,7 @@
             <group delimiter=", " >
               <text variable="volume" prefix=", vol. "/>
               <text variable="issue" prefix="n°"/>
-              <date variable="issued" form="text" prefix=", ">
-                <date-part name="day"/>
-                <date-part name="month"/>
-                <date-part name="year"/>
-              </date>
+              <date date-parts="year" form="text" variable="issued" prefix=", "/>
             </group>
           </else-if>
           <else-if type="webpage webpage post post-weblog" match="any">
