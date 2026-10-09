@@ -631,7 +631,7 @@
             <group delimiter=", " >
               <text variable="volume" prefix=", vol. "/>
               <text variable="issue" prefix="n°"/>
-              <date date-parts="year" form="text" variable="issued" prefix=", "/>
+              <date date-parts="year" form="text" variable="issued" prefix=""/>
             </group>
           </else-if>
           <else-if type="webpage webpage post post-weblog" match="any">
