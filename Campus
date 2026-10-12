@@ -190,7 +190,7 @@
           <text variable="title" text-case="capitalize-first" quotes="true"/>
       </group>
       <group delimiter=", ">
-          <text macro="book-author-editor" prefix=" dans "/>
+          <text macro="book-author-editor" prefix=", dans "/>
           <text variable="container-title"  font-style="italic"/>
       </group>
     </else-if>
