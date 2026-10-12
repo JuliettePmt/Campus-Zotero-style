@@ -459,14 +459,7 @@
       <text macro="ibid"/>
     </if>
     <else-if position="subsequent">
-      <choose>
-        <if variable="locator" match="none">
-          <text value="Ibid." font-style="italic"/>
-        </if>
-        <else>
-          <text macro="op-cit"/>
-        </else>
-      </choose>
+      <text macro="op-cit"/>
     </else-if>
     <else-if type="paper-conference" match="any">
       <group delimiter=", ">
