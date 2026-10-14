@@ -439,8 +439,8 @@
   <!-- TODO: Add new locator types? -->
   <group delimiter=" ">
     <choose>
-      <if locator="chapter">
-        <label variable="locator" text-case="capitalize-first"/>
+      <if locator="chapter" form="short">
+        <label variable="locator"/>
       </if>
       <else>
         <label variable="locator" form="short"/>
@@ -453,7 +453,8 @@
 <!-- ********************************************* -->
 
 <citation et-al-min="3" et-al-use-first="2" disambiguate-add-names="true" disambiguate-add-givenname="true">
-<layout suffix="." delimiter=" ; ">
+<layout suffix="" delimiter=" ; ">
+  <group suffix = ".">
     <choose>
     <if position="ibid-with-locator ibid" match="any">
       <text macro="ibid"/>
@@ -551,6 +552,7 @@
     <text macro="url"/>
     </else>
   </choose>
+  </group>
   </layout>
 </citation>
 
