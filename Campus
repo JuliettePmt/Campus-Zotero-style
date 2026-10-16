@@ -523,12 +523,24 @@
       <date date-parts="year" form="text" variable="issued" suffix=""/>
       <text variable="locator" prefix=", p. "/>
     </else-if>
-    <else-if type="article-journal article-magazine article-newspaper" match="any">
+    <else-if type="article-journal" match="any">
+      <group delimiter=", ">
+        <text variable="volume" prefix="vol. "/>
+        <text variable="issue" prefix="n°"/>
+        <date date-parts="year" form="text" variable="issued"/>
+        <text variable="locator" prefix="p. "/>
+      </group>
+    </else-if>
+    <else-if type="article-magazine article-newspaper" match="any">
       <group delimiter=", ">
         <text macro="newspaper-data"/>
         <text variable="volume" prefix="vol. "/>
         <text variable="issue" prefix="n°"/>
-        <date date-parts="year" form="text" variable="issued"/>
+          <date variable="issued" form="text">
+            <date-part name="day"/>
+            <date-part name="month"/>
+            <date-part name="year"/>
+        </date>
         <text variable="locator" prefix="p. "/>
       </group>
     </else-if>
@@ -544,6 +556,7 @@
     </else-if>
       <else-if type="webpage webpage post post-weblog" match="any">
         <date variable="issued" form="text">
+        <date-part name="day"/>
         <date-part name="month"/>
         <date-part name="year"/>
         </date>
@@ -677,6 +690,4 @@
     <text macro="url"/>
   </layout>
 </bibliography>
-
-
 </style>
