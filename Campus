@@ -190,7 +190,7 @@
 
 <macro name="title">
   <choose>
-    <if type="bill book graphic legal_case motion_picture report song" match="any">
+    <if type="bill book graphic legal_case motion_picture song" match="any">
       <text variable="title" text-case="capitalize-first" font-style="italic"/>
     </if>
     <else-if type="article-journal article-magazine" match="any">
@@ -230,7 +230,7 @@
         </group>
       </group>
     </else-if>
-    <else-if type="webpage webpage post post-weblog" match="any">
+    <else-if type="webpage webpage post post-weblog report" match="any">
       <group>
         <text variable="title" text-case="capitalize-first" prefix="« " suffix=" »"/>
       </group>
