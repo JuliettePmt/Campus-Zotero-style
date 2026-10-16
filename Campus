@@ -21,6 +21,7 @@
       <term name="ordinal-04">e</term>
       <term name="cited">op., #160;cit.</term>
       <term name="page" form="short">p.</term>
+      <term name="chapter" form="short">chap.</term>
       <term name="editor" form="short"> (dir.)</term>
       <term name="container-contributors" form="short">dir.</term>
       <term name="in" form="short">dans </term>
@@ -444,11 +445,10 @@
 
 
 <macro name="citation-locator">
-  <!-- TODO: Add new locator types? -->
   <group delimiter=" ">
     <choose>
-      <if locator="chapter" form="short">
-        <label variable="locator"/>
+      <if locator="chapter">
+        <label variable="locator" form="short"/>
       </if>
       <else>
         <label variable="locator" form="short"/>
@@ -501,7 +501,7 @@
     <choose>
     <if type="book thesis standard bill report manuscript" match="any">
       <date date-parts="year" form="text" variable="issued"/>
-      <text variable="locator" prefix=", p. "/>
+      <text macro="citation-locator" prefix=", "/>
     </if>
     <else-if type="paper-conference" match="any">
       <group delimiter=", ">
