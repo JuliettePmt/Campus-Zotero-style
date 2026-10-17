@@ -506,6 +506,7 @@
     <choose>
     <if type="book thesis standard bill report manuscript" match="any">
       <date date-parts="year" form="text" variable="issued"/>
+      <text macro="publication-history"/>
       <text macro="citation-locator" prefix=", "/>
     </if>
     <else-if type="paper-conference" match="any">
@@ -528,8 +529,12 @@
         <text variable="volume" prefix="vol. "/>
         <text variable="issue" prefix="n°"/>
         <date date-parts="year" form="text" variable="issued"/>
+      </group>
+      <group delimiter=", ">
+        <text macro="publication-history"/>
         <text variable="locator" prefix="p. "/>
       </group>
+  
     </else-if>
     <else-if type="article-magazine article-newspaper" match="any">
       <group delimiter=", ">
@@ -575,7 +580,6 @@
     </choose>
     </group>
     </group>
-    <text macro="publication-history"/>
     <text macro="url"/>
     </else>
   </choose>
