@@ -190,9 +190,12 @@
 
 <macro name="title">
   <choose>
-    <if type="bill book graphic legal_case motion_picture song" match="any">
+    <if type="bill book graphic legal_case song" match="any">
       <text variable="title" text-case="capitalize-first" font-style="italic"/>
     </if>
+    <else-if type="motion_picture" match="any">
+      <text variable="title" text-case="capitalize-first" prefix="« " suffix=" »"/>
+    </else-if>
     <else-if type="article-journal article-magazine" match="any">
       <group delimiter=", ">
         <text variable="title" text-case="capitalize-first" quotes="true" font-style="normal"/>
@@ -285,9 +288,12 @@
 
 <macro name="publisher">
   <choose>
-    <if type="bill book chapter entry-dictionary entry-encyclopedia graphic legal_case motion_picture paper-conference report song" match="any">
+    <if type="bill book chapter entry-dictionary entry-encyclopedia graphic legal_case paper-conference report song" match="any">
       <text variable="publisher"/>
     </if>
+    <else-if type="motion_picture" match="any">
+      <text variable="publisher" form="short" font-style="italic"/>
+    </else-if>
   </choose>
 </macro>
 
@@ -302,7 +308,7 @@
 
 <macro name="url">
   <choose>
-      <if type="webpage post report post-weblog article-magazine article-newspaper" match="any">
+      <if type="webpage post report post-weblog article-magazine article-newspaper motion_picture" match="any">
       <text variable="URL" text-decoration="underline" prefix=". Disponible à l’adresse : "/>
     </if>
   </choose>
@@ -490,6 +496,18 @@
         <text variable="locator" prefix="p. "/>
       </group>
     </else-if>
+    <else-if type="motion_picture" match="any">
+      <group delimiter=", ">
+        <text macro="author"/>
+        <text macro="title"/>
+        <text macro="publisher"/>
+        <date variable="issued" form="text">
+          <date-part name="month"/>
+          <date-part name="year"/>
+        </date>
+      </group>
+    </else-if>
+
     <else>
     <group delimiter=", ">
     <text macro="author"/>
@@ -686,6 +704,14 @@
           </date>
         </group>
       </else-if>
+      <else-if type="motion_picture" match="any">
+      <group prefix=", ">
+        <date variable="issued" form="text">
+          <date-part name="month"/>
+          <date-part name="year"/>
+        </date>
+      </group>
+    </else-if>
 
         </choose>
       </else>
