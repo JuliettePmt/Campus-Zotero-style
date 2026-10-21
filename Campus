@@ -194,7 +194,7 @@
       <text variable="title" text-case="capitalize-first" font-style="italic"/>
     </if>
     <else-if type="motion_picture" match="any">
-      <text variable="title" text-case="capitalize-first" prefix="« " suffix=" »"/>
+      <text variable="title" text-case="capitalize-first" quotes="true"/>
     </else-if>
     <else-if type="article-journal article-magazine" match="any">
       <group delimiter=", ">
@@ -235,7 +235,7 @@
     </else-if>
     <else-if type="webpage webpage post post-weblog report" match="any">
       <group>
-        <text variable="title" text-case="capitalize-first" prefix="« " suffix=" »"/>
+        <text variable="title" text-case="capitalize-first" quotes="true"/>
       </group>
     </else-if>
     <else>
