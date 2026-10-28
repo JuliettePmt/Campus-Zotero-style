@@ -493,7 +493,7 @@
           <date-part name="month"/>
           <date-part name="year"/>
         </date>
-        <text variable="locator" prefix="p. "/>
+        <text variable="locator" prefix="p. "/>
       </group>
     </else-if>
     <else-if type="motion_picture" match="any">
@@ -535,12 +535,12 @@
           <date-part name="month"/>
           <date-part name="year"/>
         </date>
-        <text variable="locator" prefix="p. "/>
+        <text variable="locator" prefix="p. "/>
       </group>
     </else-if>
     <else-if type="chapter" match="any">
       <date date-parts="year" form="text" variable="issued" suffix=""/>
-      <text variable="locator" prefix=", p. "/>
+      <text variable="locator" prefix=", p. "/>
     </else-if>
     <else-if type="article-journal" match="any">
       <group delimiter=", ">
@@ -550,7 +550,7 @@
       </group>
       <group delimiter=", ">
         <text macro="publication-history"/>
-        <text variable="locator" prefix="p. "/>
+        <text variable="locator" prefix="p. "/>
       </group>
   
     </else-if>
@@ -564,7 +564,7 @@
             <date-part name="month"/>
             <date-part name="year"/>
         </date>
-        <text variable="locator" prefix="p. "/>
+        <text variable="locator" prefix="p. "/>
       </group>
     </else-if>
     <else-if type="paper-conference" match="any">
@@ -574,7 +574,7 @@
           <date-part name="month"/>
           <date-part name="year"/>
         </date>
-        <text variable="locator" prefix="p. "/>
+        <text variable="locator" prefix="p. "/>
       </group>
     </else-if>
       <else-if type="webpage webpage post post-weblog" match="any">
@@ -627,7 +627,7 @@
             <date-part name="month"/>
             <date-part name="year"/>
           </date>
-          <text variable="locator" prefix="p. "/>
+          <text variable="locator" prefix="p. "/>
         </group>
       </if>
       <else-if type="software">
@@ -665,7 +665,7 @@
           <else-if type="chapter" match="any">
             <group delimiter=", " prefix=", ">
               <date date-parts="year" form="text" variable="issued"/>
-              <text variable="locator" prefix="p. "/>
+              <text variable="locator" prefix="p. "/>
             </group>
           </else-if>
           <else-if type="software">
