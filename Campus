@@ -75,14 +75,14 @@
         </substitute>
       </names>
     </else-if>
-      <else-if variable="editor">
-        <names variable="editor">
-          <name and="text" delimiter-precedes-last="always" name-as-sort-order="all">
-            <name-part name="family" text-case="capitalize-first" font-variant="small-caps"/>
-          </name>
-          <label form="short" plural="never"/>
-        </names>
-      </else-if>
+    <else-if variable="editor">
+      <names variable="editor">
+        <name and="text" delimiter-precedes-last="always" name-as-sort-order="all">
+          <name-part name="family" text-case="capitalize-first" font-variant="small-caps"/>
+        </name>
+        <label form="short" plural="never"/>
+      </names>
+    </else-if>
   </choose>
 </macro>
 
@@ -208,7 +208,7 @@
       </group>
       <group delimiter=", ">
           <text macro="book-author-editor" prefix=", dans "/>
-          <text variable="container-title"  font-style="italic"/>
+          <text variable="container-title"  font-style="italic" prefix=", "/>
       </group>
     </else-if>
     <else-if type="thesis" match="any">
