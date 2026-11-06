@@ -208,7 +208,7 @@
       </group>
       <group delimiter=", ">
           <text macro="book-author-editor" prefix=", dans "/>
-          <text variable="container-title"  font-style="italic" prefix=", "/>
+          <text variable="container-title"  font-style="italic"/>
       </group>
     </else-if>
     <else-if type="thesis" match="any">
