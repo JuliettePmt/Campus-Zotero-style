@@ -155,12 +155,12 @@
         <name-part name="given"/>
       </name>
     </names>
+        <if type="book">
+      <text variable="title" font-style="italic"/>
+    </if>
     <choose>
       <if disambiguate="true">
         <choose>
-          <if type="book">
-            <text variable="title" font-style="italic"/>
-          </if>
           <else>
             <text variable="title" quotes="true"/>
           </else>
