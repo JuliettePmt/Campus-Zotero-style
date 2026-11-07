@@ -147,6 +147,7 @@
   </choose>
 </macro>
 
+
 <macro name="op-cit">
   <group delimiter=", ">
     <names variable="author">
@@ -155,22 +156,19 @@
         <name-part name="given"/>
       </name>
     </names>
-        <if type="book">
-      <text variable="title" font-style="italic"/>
-    </if>
     <choose>
-      <if disambiguate="true">
-        <choose>
-          <else>
-            <text variable="title" quotes="true"/>
-          </else>
-        </choose>
+      <if type="book">
+        <text variable="title" font-style="italic"/>
       </if>
+      <else>
+        <text variable="title" quotes="true"/>
+      </else>
     </choose>
     <text value="op. cit." font-style="italic"/>
     <text macro="citation-locator"/>
   </group>
 </macro>
+
 
 <macro name="blog-data">
   <choose>
