@@ -378,6 +378,14 @@
   </choose>
 </macro>
 
+<macro name="format">
+  <choose>
+    <if variable="medium">
+      <text variable="medium" prefix=" [Format " suffix="]" text-case="lowercase"/>
+    </if>
+  </choose>
+</macro>
+
 <macro name="date-intext">
   <!-- TODO: Add new item types -->
   <choose>
@@ -596,8 +604,12 @@
     </choose>
     </group>
     </group>
-    <text macro="url"/>
+    <group delimiter=", ">
+      <text macro="url"/>
+    </group>
     </else>
+        <text macro="format"/>
+
   </choose>
   </group>
   </layout>
@@ -703,14 +715,13 @@
         </group>
       </else-if>
       <else-if type="motion_picture" match="any">
-      <group prefix=", ">
-        <date variable="issued" form="text">
-          <date-part name="month"/>
-          <date-part name="year"/>
-        </date>
-      </group>
-    </else-if>
-
+        <group prefix=", ">
+          <date variable="issued" form="text">
+            <date-part name="month"/>
+            <date-part name="year"/>
+          </date>
+        </group>
+      </else-if>
         </choose>
       </else>
     </choose>
