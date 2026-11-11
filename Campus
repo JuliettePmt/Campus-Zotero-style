@@ -525,6 +525,9 @@
         </date>
       </group>
     </else-if>
+          <else-if type="broadcast">
+        <text macro="radio"/>
+      </else-if>
 
     <else>
     <group delimiter=", ">
@@ -570,9 +573,6 @@
         <text macro="publication-history"/>
         <text variable="locator" prefix="p. "/>
       </group>
-    </else-if>
-    <else-if type="broadcast">
-      <text macro="radio"/>
     </else-if>
     <else-if type="article-magazine article-newspaper" match="any">
       <group delimiter=", ">
