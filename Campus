@@ -178,6 +178,18 @@
   </choose>
 </macro>
 
+<macro name="radio">
+  <group delimiter=", ">
+    <text variable="title" quotes="true"/>
+    <text variable="container-title" suffix=" (podcast)"/>
+    <text variable="number" prefix="épisode "/>
+    <date variable="issued" delimiter=" ">
+      <date-part name="month"/>
+      <date-part name="year"/>
+    </date>
+  </group>
+</macro>
+
 <macro name="newspaper-data">
    <choose>
       <if type="article-newspaper" match="any">
@@ -381,7 +393,7 @@
 <macro name="format">
   <choose>
     <if variable="medium">
-      <text variable="medium" prefix=" [Format " suffix="]" text-case="lowercase"/>
+      <text variable="medium" prefix=" [format " suffix="]" text-case="lowercase"/>
     </if>
   </choose>
 </macro>
@@ -558,7 +570,9 @@
         <text macro="publication-history"/>
         <text variable="locator" prefix="p. "/>
       </group>
-  
+    </else-if>
+    <else-if type="broadcast">
+      <text macro="radio"/>
     </else-if>
     <else-if type="article-magazine article-newspaper" match="any">
       <group delimiter=", ">
@@ -608,8 +622,7 @@
       <text macro="url"/>
     </group>
     </else>
-        <text macro="format"/>
-
+    <text macro="format"/>
   </choose>
   </group>
   </layout>
@@ -649,6 +662,9 @@
         <group prefix=". Code du logiciel disponible à l'adresse : ">
           <text macro="URL-software"/>
         </group>
+      </else-if>
+      <else-if type="broadcast">
+        <text macro="radio"/>
       </else-if>
       <!-- Cas tous les autres types -->
       <else>
