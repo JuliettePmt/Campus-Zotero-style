@@ -159,10 +159,10 @@
     <choose>
       <if type="book">
         <text macro="author"/>
-        <text variable="title" font-style="italic"/>
+        <text variable="title-short" font-style="italic"/>
       </if>
       <else>
-        <text variable="title" quotes="true"/>
+        <text variable="title-short" quotes="true"/>
       </else>
     </choose>
     <text value="op. cit." font-style="italic"/>
