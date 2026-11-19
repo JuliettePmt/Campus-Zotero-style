@@ -177,6 +177,16 @@
           </else>
         </choose>
       </else-if>
+      <else-if type="chapter">
+        <choose>
+          <if variable="title-short">
+            <text variable="title-short" quotes="true"/>
+          </if>
+          <else>
+            <text variable="title" quotes="true"/>
+          </else>
+        </choose>
+      </else-if>
       <else>
         <text variable="title-short" quotes="true"/>
       </else>
@@ -231,7 +241,7 @@
     </else-if>
     <else-if type="chapter" match="any">
       <group delimiter=", ">
-          <text variable="title" text-case="capitalize-first" quotes="true"/>
+          <text variable="title" text-case="capitalize-first" quotes="true" suffix=", "/>
       </group>
       <group delimiter=", ">
           <text macro="book-author-editor" prefix=", dans "/>
