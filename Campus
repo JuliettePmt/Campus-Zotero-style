@@ -158,7 +158,6 @@
     </names>
     <choose>
       <if type="book">
-        <text macro="author"/>
         <text variable="title-short" font-style="italic"/>
       </if>
       <else>
