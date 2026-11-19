@@ -158,8 +158,25 @@
     </names>
     <choose>
       <if type="book">
-        <text variable="title-short" font-style="italic"/>
+        <choose>
+          <if variable="title-short">
+            <text variable="title-short" font-style="italic"/>
+          </if>
+          <else>
+            <text variable="title" font-style="italic"/>
+          </else>
+        </choose>      
       </if>
+      <else-if type="article-journal">
+        <choose>
+          <if variable="title-short">
+            <text variable="title-short" quotes="true"/>
+          </if>
+          <else>
+            <text variable="title" quotes="true"/>
+          </else>
+        </choose>
+      </else-if>
       <else>
         <text variable="title-short" quotes="true"/>
       </else>
