@@ -255,10 +255,8 @@
     </else-if>
     <else-if type="chapter" match="any">
       <group delimiter=", ">
-          <text variable="title" text-case="capitalize-first" quotes="true" suffix=", "/>
-      </group>
-      <group delimiter=", ">
-          <text macro="book-author-editor" prefix=", dans "/>
+          <text variable="title" text-case="capitalize-first" quotes="true"/>
+          <text macro="book-author-editor" prefix=" dans "/>
           <text variable="container-title"  font-style="italic"/>
       </group>
     </else-if>
