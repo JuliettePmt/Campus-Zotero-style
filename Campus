@@ -150,12 +150,25 @@
 
 <macro name="op-cit">
   <group delimiter=", ">
-    <names variable="author">
-      <name name-as-sort-order="all" sort-separator=" " and="text" delimiter-precedes-last="never">
-        <name-part name="family" font-variant="small-caps"/>
-        <name-part name="given"/>
-      </name>
-    </names>
+    <choose>
+      <if variable="author">
+        <names variable="author">
+          <name name-as-sort-order="all" sort-separator=" " and="text" delimiter-precedes-last="never">
+            <name-part name="family" font-variant="small-caps"/>
+            <name-part name="given"/>
+          </name>
+        </names>
+      </if>
+      <else-if variable="editor">
+        <names variable="editor">
+          <name name-as-sort-order="all" sort-separator=" " and="text" delimiter-precedes-last="never">
+            <name-part name="family" font-variant="small-caps"/>
+            <name-part name="given"/>
+          </name>
+          <label form="short" prefix=" "/>
+        </names>
+      </else-if>
+    </choose>
     <choose>
       <if type="book">
         <choose>
@@ -165,7 +178,7 @@
           <else>
             <text variable="title" font-style="italic"/>
           </else>
-        </choose>      
+        </choose>
       </if>
       <else-if type="article-journal">
         <choose>
@@ -195,6 +208,7 @@
     <text macro="citation-locator"/>
   </group>
 </macro>
+
 
 
 <macro name="blog-data">
